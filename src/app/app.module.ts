@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProductChoiceComponent } from './components/product-choice/product-choice.component';
@@ -15,8 +14,7 @@ import { ProductsListComponent } from './components/products-list/products-list.
     TooltipComponent,
   ],
   imports: [
-    BrowserModule,FormsModule,
-    ReactiveFormsModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
