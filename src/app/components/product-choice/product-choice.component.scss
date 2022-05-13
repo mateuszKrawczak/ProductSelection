@@ -1,0 +1,26 @@
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #ddd;
+  border: 1px solid #aaa;
+
+  .header__arrow {
+    cursor: pointer;
+    height: 50px;
+    img {
+      height: 100%;
+    }
+  }
+}
+.content {
+  border: 1px solid #aaa;
+  border-top: 0;
+}

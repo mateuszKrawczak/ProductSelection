@@ -1,0 +1,22 @@
+<section class="container">
+  <header class="header">
+    <h2>Wybór produktów</h2>
+    <div
+      *ngIf="showedContent"
+      class="header__arrow"
+      (click)="changeContentView()"
+    >
+      <img class="header__arrow--opened" src="assets/icons/arrow-opened.svg" />
+    </div>
+    <div
+      *ngIf="!showedContent"
+      class="header__arrow"
+      (click)="changeContentView()"
+    >
+      <img class="header__arrow--closed" src="assets/icons/arrow-closed.svg" />
+    </div>
+  </header>
+  <div class="content" *ngIf="showedContent">
+    <app-products-list></app-products-list>
+  </div>
+</section>

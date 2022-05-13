@@ -1,0 +1,10 @@
+<div class="product" [ngClass]="{ 'product--selected': selected }">
+  <h4>{{ product.name }}</h4>
+  <div class="product__tooltip">
+    <app-tooltip
+      class="product__tooltip--opened"
+      [description]="product.description"
+    ></app-tooltip
+    >?
+  </div>
+</div>

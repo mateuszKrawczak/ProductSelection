@@ -1,14 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { ProductChoiceComponent } from './components/product-choice/product-choice.component';
+import { ProductComponent } from './components/product/product.component';
+import { TooltipComponent } from './components/product/tooltip/tooltip.component';
+import { ProductsListComponent } from './components/products-list/products-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,ProductChoiceComponent,
+    ProductsListComponent,
+    ProductComponent,
+    TooltipComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

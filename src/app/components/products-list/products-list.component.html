@@ -1,0 +1,9 @@
+<section class="list">
+  <app-product
+    *ngFor="let product of productsList; trackBy: trackById"
+    [id]="'product-' + product.id"
+    [product]="product"
+    [selected]="selectedProduct?.id === product.id"
+    (click)="selectProduct(product)"
+  ></app-product>
+</section>

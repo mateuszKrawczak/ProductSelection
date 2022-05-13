@@ -1,0 +1,49 @@
+.product {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 150px;
+  border-radius: 10px;
+  background-color: #eee;
+  border: 1px solid #bbb;
+
+  .product__tooltip {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #aaa;
+    color: #fff;
+
+    .product__tooltip--opened {
+      z-index: 10;
+      position: absolute;
+      top: -240%;
+      visibility: hidden;
+    }
+  }
+  .product__tooltip:hover .product__tooltip--opened {
+    visibility: visible;
+  }
+}
+.product:hover {
+  cursor: pointer;
+}
+
+.product--selected {
+  background-color: rgb(20, 6, 104);
+  color: #fff;
+  border: 1px solid rgb(20, 6, 104);
+
+  .product__tooltip {
+    background-color: #fff;
+    color: #aaa;
+  }
+}
